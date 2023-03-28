@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+
+    <script src="./js/database.js" defer></script>
+    <script src="./js/script.js" defer></script>
+    <title>S8-01 | 🏆 Projeto Front End: E-commerce - Construção do Projeto</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-header">
+            <figure class="figure-logo">
+                <img class="img-logo" src="./img/logoPNG.PNG" alt="Logo La Fruteria Delivery">
+            </figure>
+
+            <nav class="menu">
+                <ul class="ul-menu">
+                    <li class="li-menu">
+                        <a class="link-menu" id="link-todas" href="#" target="_self">Todas</a>
+                    </li>
+                    <li class="li-menu">
+                        <a class="link-menu" id="link-Doce" href="#" target="_self">Doces</a>
+                    </li>
+                    <li class="li-menu">
+                        <a class="link-menu" id="link-Cítrica" href="#" target="_self">Cítricas</a>
+                    </li>
+                    <li class="li-menu">
+                        <a class="link-menu" id="link-Semiácida" href="#" target="_self">Semiácidas</a>
+                    </li>
+                    <li class="li-menu">
+                        <a class="link-menu" id="link-Hiper-hídrica" href="#" target="_self">Hiper-hídricas</a>
+                    </li>
+                    <li class="li-menu">
+                        <a class="link-menu" id="link-Oleaginosa" href="#" target="_self">Oleaginosas</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- VITRINE -->
+    <main class="container-main">
+        <section class="section-fruits">
+            <ul class="ul-fruits" id="fruits-vitrine">
+                <!-- <li class="li-cadrs-fruit">
+                    <figure class="figure-card">
+                        <img class="img-fruit" src="./img/1_uvaCrimson.png" alt="Uva Crimson">
+                    </figure>
+                    <div class="info-fruit">
+                        <button class="button-categoria">
+                            Ácida
+                        </button>
+                        <h2 class="name-fruit">Uva Crimson</h2>
+                        <p class="description-fruit">Fruta sem sementes, leve e saborosa. Cotém antioxidantes que retardam o envelhecimento dos tecidos do corpo, ajudam na saúde do intestino e são ótimos para o coração.</p>
+                        <h3 class="price-fruit">R$ 29,99</h3>
+                        <button class="button-add-fruit">Adicionar ao carrinho</button>
+                    </div>
+                </li> -->
+
+            </ul>
+        </section>
+        <!-- CARRINHO -->
+        <section class="section-car-fruits">
+            <form class="formulario">
+                <fieldset class="fieldset">
+                    <legend class="legend-pesquisa" hidden>Pesquisa Fruta</legend>
+                    <label class="label-pesquisa" for="input-pesquisa-fruta"></label>
+                    <input class="input-pesquisa" id="input-pesquisa-fruta" type="search" name="input-pesquisa" value=""
+                        placeholder="Digite aqui sua pesquisa">
+                    <button class="button-pesquisa" id="button-pesquisa-fruta" type="submit">Pesquisar</button>
+                </fieldset>
+            </form>
+            <div class="car-compras">
+                <h2 class="titulo-carrinho">Carrinho de Compras</h2>
+                <ul class="fruit-add-carrinho" id="fruits-carrinho">
+                    <div class="mensagem-carrinho">
+                        <h3 class="mensagem-carrinho-vazio">Carrinho Vazio</h3>
+                        <p class="mensagem-adicione-itens">Adicione itens</p>
+                    </div>
+                    <!-- <li class="card-fruit-add">
+                        <figure class="figure-card-carrinho">
+                            <img class="img-fruit-carrinho" src="./img/1_uvaCrimson.png" alt="Uva Crimson">
+                        </figure>
+                        <div class="info-compra-carrinho">
+                            <h4 class="name-fruit-carrinho">Uva Crimson</h4>
+                            <p class="price-fruit-carrinho">R$ 29,99</p>
+                            <button class="button-remove-fruit">Remover</button>
+                        </div>
+                    </li> -->
+                </ul>
+                <div class="valor-compra">
+                    <div class="div-qtd">
+                        <h4 class="qtd-fruits">Quantidade:</h4>
+                        <p id="qtde-fruits-carrinho">0</p>
+                    </div>
+                    <div class="div-total">
+                        <h4 class="total-compra">Total:</h4>
+                        <p id="total-fruits-carrinho">R$ 0,00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <figure class="figure">
+            <figcaption class="info-footer">
+                Para mais informações sobre a autora deste site, consulte nossas edes sociais
+            </figcaption>
+            <ul class="ul-img-footer">
+                <li>
+                    <a href="https://www.linkedin.com/in/francieli-ps/"
+                        target="_blank">                        
+                        <img class="rede-social-img img-linkedin" src="./img/linkedin.png" alt="linkedin Francieli" /></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/francieli.ps/"
+                        target="_blank">
+                        <img class="rede-social-img" src="./img/instagram.png" alt="intagram Francieli" /></a>
+                </li>
+            </ul>
+        </figure>
+
+    </footer>
+
+</body>
+
+</html>
